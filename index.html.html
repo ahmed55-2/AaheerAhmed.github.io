@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaheer Ahmed | Access and Identity Management Analyst</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#080c14',
+                        darkCard: '#111827',
+                        darkBorder: '#1f2937',
+                        accentBlue: '#2563eb',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 antialiased selection:bg-accentCyan selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-darkBorder">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-wider text-white flex items-center gap-2">
+                <span class="text-accentCyan">&lt;</span>Zaheer Ahmed<span class="text-accentCyan">&gt;</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
+                <a href="#skills" class="hover:text-accentCyan transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-accentCyan transition-colors">Experience</a>
+                <a href="#education" class="hover:text-accentCyan transition-colors">Education</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-cyan-500/10">Get in Touch</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darkCard border-b border-darkBorder px-6 py-4 flex flex-col gap-4">
+            <a href="#about" class="mobile-link text-gray-300 hover:text-accentCyan">About</a>
+            <a href="#skills" class="mobile-link text-gray-300 hover:text-accentCyan">Skills</a>
+            <a href="#experience" class="mobile-link text-gray-300 hover:text-accentCyan">Experience</a>
+            <a href="#education" class="mobile-link text-gray-300 hover:text-accentCyan">Education</a>
+            <a href="#contact" class="mobile-link text-accentCyan font-medium">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH PHOTO -->
+    <section class="min-h-screen flex items-center justify-center pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(6,182,212,0.12),rgba(255,255,255,0))]"></div>
+        <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <!-- Left Column: Text Content -->
+            <div class="md:col-span-7 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/50 border border-cyan-800/40 text-accentCyan text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-shield-halved"></i> 15+ Years IT & IAM Experience
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
+                    Zaheer Ahmed
+                </h1>
+                <p class="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-6">
+                    Access and Identity Management Analyst
+                </p>
+                <p class="text-gray-400 text-base sm:text-lg mb-8 leading-relaxed">
+                    SailPoint IdentityIQ Administrator & PAM Specialist specializing in enterprise user lifecycle administration, secure access governance, and least-privilege compliance.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#experience" class="px-7 py-3.5 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
+                        <span>Explore Experience</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl bg-darkCard border border-darkBorder text-gray-200 font-semibold hover:bg-gray-800 transition-all">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Professional Photo -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80">
+                    <!-- Glowing Background Ring -->
+                    <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-600 to-cyan-400 blur-xl opacity-30 animate-pulse"></div>
+                    <!-- Photo Container -->
+                    <div class="relative w-full h-full rounded-3xl border-2 border-cyan-500/30 overflow-hidden bg-darkCard shadow-2xl">
+                        <img src="My photo.png" alt="Zaheer Ahmed" class="w-full h-full object-cover object-center">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT / PROFILE SUMMARY -->
+    <section id="about" class="py-20 px-6 bg-darkCard/30 border-t border-b border-darkBorder">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-3">Professional Profile</h2>
+                <div class="w-16 h-1 bg-accentCyan mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-darkCard border border-darkBorder shadow-xl flex flex-col justify-between hover:border-cyan-500/40 transition-colors">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-accentCyan text-xl mb-6">
+                            <i class="fa-solid fa-id-badge"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Identity Lifecycle & Governance</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Expertise in joiner-mover-leaver (JML) administration, access provisioning, recertification, remediation, and role-based access control (RBAC).
+                        </p>
+                    </div>
+                </div>
+                <div class="p-8 rounded-2xl bg-darkCard border border-darkBorder shadow-xl flex flex-col justify-between hover:border-cyan-500/40 transition-colors">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-600/10 border border-cyan-500/20 flex items-center justify-center text-accentCyan text-xl mb-6">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">SailPoint & CyberArk PAM</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Hands-on SailPoint IdentityIQ administration, entitlement reviews, UAT, CyberArk privileged account onboarding, safe management, and password rotations.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-8 rounded-2xl bg-darkCard border border-darkBorder shadow-xl flex flex-col justify-between hover:border-cyan-500/40 transition-colors">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-accentCyan text-xl mb-6">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Enterprise Ecosystems</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Extensive administration across Active Directory, Office 365, Oracle E-Business Suite, Salesforce, Google G-Suite, and ServiceNow ITSM frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & EXPERTISE SECTION -->
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-3">Skills & Expertise</h2>
+            <div class="w-16 h-1 bg-accentCyan mx-auto rounded-full"></div>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">Core technical capabilities, tools, and professional competencies.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Identity Management</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Active Directory</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Office 365 Administration</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Access Management</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Privileged Access Management (PAM)</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">G-Suite Administration</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">SailPoint IdentityIQ</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Salesforce Administration</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">CyberArk Administration</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">ServiceNow</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Oracle E-Business Suite</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Amazon Web Services (AWS)</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">IT Support</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Network Administration</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Troubleshooting</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">ITIL Foundation</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Azure Fundamentals</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Teamwork & Communication</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Problem Solving</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Task Prioritization & Deadlines</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Adaptability & Eagerness to Learn</span>
+            </div>
+            <div class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-accentCyan"></i>
+                <span class="text-gray-200 font-medium text-sm">Stakeholder Management</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 px-6 bg-darkCard/30 border-t border-b border-darkBorder">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-3">Professional Experience</h2>
+                <div class="w-16 h-1 bg-accentCyan mx-auto rounded-full"></div>
+            </div>
+            <div class="space-y-12">
+                <!-- Role 1 -->
+                <div class="relative pl-8 border-l-2 border-blue-600">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-600 border-4 border-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Identity Management Analyst - Operations</h3>
+                        <span class="text-sm font-semibold text-accentCyan">03/2025 - 05/2026</span>
+                    </div>
+                    <p class="text-sm font-semibold text-gray-400 mb-4">Virgin Media/O2 | Bradford (Leeds/Hybrid)</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 text-sm leading-relaxed">
+                        <li>Resolved BAU identity requests and incidents within SLA using ITSM and My Identity (Helix).</li>
+                        <li>Troubleshot and resolved IAM-related issues and supported authentication/access requests.</li>
+                        <li>Managed Active Directory accounts, profiles, and permissions, applying least-privilege access.</li>
+                        <li>Handled leaver and mover accounts and supported identity lifecycle housekeeping.</li>
+                        <li>Conducted re-certification, remediation, and access validation activities.</li>
+                        <li>Administered Office 365, set up shared mailboxes/distribution lists, and resolved mailbox queries.</li>
+                        <li>Supported password resets, account unlocks, and MFA-related requests.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative pl-8 border-l-2 border-blue-600">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-blue-600 border-4 border-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Technology Analyst - Access Management</h3>
+                        <span class="text-sm font-semibold text-accentCyan">August 2017 - May 2024</span>
+                    </div>
+                    <p class="text-sm font-semibold text-gray-400 mb-4">Wm Morrison Supermarkets PLC | Hilmore House, Bradford</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 text-sm leading-relaxed">
+                        <li>Provided IAM/PAM support across the Morrisons estate, including 2nd-line support, incident resolution, and BAU access administration.</li>
+                        <li>Worked on projects implementing new IAM automation and PAM technologies and provided application training to end users.</li>
+                        <li>Administered Active Directory accounts, user profiles, service accounts, and privileged accounts with least-privilege controls.</li>
+                        <li>Managed file-share access, Global and Domain Local groups, group nesting, and NTFS permissions.</li>
+                        <li>Performed user access re-certification, remediation, and continuous access validation.</li>
+                        <li><strong>SailPoint IdentityIQ Administration:</strong> Administered and created entitlements, role-based entitlements, performed UAT, investigated/troubleshot issues, ran reports, and created process documentation.</li>
+                        <li><strong>CyberArk Administration:</strong> Created AD groups/accounts, applied server permissions, created RBAC accounts, supported password rotations, onboarded accounts, and administered CyberArk Safe permissions.</li>
+                        <li><strong>Google G-Suite Administration:</strong> Created and managed accounts, groups, shared mailboxes, and organizational units; conducted audits, configured security settings, and supported migration projects. Created and used scripts to run G-Suite reports and knowledge-base articles.</li>
+                        <li><strong>Salesforce Administration:</strong> Handled account creation/management, housekeeping, audit reporting, documentation, and troubleshooting.</li>
+                        <li><strong>ServiceNow:</strong> Diagnosed faults, resolved incidents within SLA, investigated root causes, and reviewed changes/change tasks.</li>
+                        <li><strong>Oracle E-Business Suite:</strong> Administered access for Oracle E-Business Suite, Macerate, Office 365, HP Service Manager, AWS, AIP Online, AIP RPASS Fusion, and AIP RDFI, liaising with internal and external teams.</li>
+                    </ul>
+                </div>
+
+                <!-- Earlier Roles Summary -->
+                <div class="relative pl-8 border-l-2 border-gray-700">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-gray-600 border-4 border-darkBg"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Previous Academic & IT Roles</h3>
+                        <span class="text-sm font-semibold text-gray-400">2004 - 2017</span>
+                    </div>
+                    <p class="text-sm font-semibold text-gray-400 mb-2">Various Institutions (Shahbaz Model Public School, IT Board Azad Kashmir, etc.)</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Delivered 1st/2nd line IT support using Remedy/Quetzal, managed Active Directory profiles, NTFS permissions, shared-drive access, and instructed students in foundational computer sciences and web technologies[cite: 2].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-3">Education & Qualifications</h2>
+            <div class="w-16 h-1 bg-accentCyan mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-2xl bg-darkCard border border-darkBorder">
+                <h3 class="text-lg font-semibold text-white mb-1">Certificate in Information Technology (CIT)</h3>
+                <p class="text-accentCyan text-sm font-medium mb-2">Scholars College of Sciences and Information, Pakistan | 2003-2004</p>
+                <p class="text-gray-400 text-sm">Specialized training in Active Directory Management.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-darkCard border border-darkBorder">
+                <h3 class="text-lg font-semibold text-white mb-1">Diploma Course in Computer Applications</h3>
+                <p class="text-accentCyan text-sm font-medium mb-2">Global Computers, Pakistan | 2001</p>
+                <p class="text-gray-400 text-sm">Project design, data analysis, LAN/WAN setup, web applications, and spreadsheet modelling.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-darkCard border border-darkBorder">
+                <h3 class="text-lg font-semibold text-white mb-1">Graduation - MCG</h3>
+                <p class="text-accentCyan text-sm font-medium mb-2">AIO University Islamabad, Pakistan | 2000 - 2003</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-darkCard border border-darkBorder">
+                <h3 class="text-lg font-semibold text-white mb-1">Professional Development</h3>
+                <p class="text-accentCyan text-sm font-medium mb-2">Ongoing Certifications</p>
+                <p class="text-gray-400 text-sm">ITIL Foundation | ServiceNow | Azure Fundamentals (In progress)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 bg-darkCard/3
